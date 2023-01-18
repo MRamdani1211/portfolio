@@ -7,16 +7,9 @@ window.onload = () => {
         hamBar = document.querySelectorAll('.ham-bar'),
         hamLogo = document.querySelector('.ham-logo'),
         hamClickBox = document.querySelectorAll('.click-box'),
-        loadingScreen = document.querySelector('.loading-screen'),
         isClicked = false,
         isOpened = false,
         rellax = new Rellax('.rellax');
-
-    document.body.classList.remove('no-scroll')
-    loadingScreen.style.opacity = '0';
-    setTimeout(() => {
-        loadingScreen.style.display = 'none';
-    }, 700)
     
     window.addEventListener('resize', () => {
         floatingText.forEach((i) => {
@@ -37,9 +30,8 @@ window.onload = () => {
     })
 
     window.addEventListener('scroll', () => {
-        let width = window.innerWidth
         if ((window.innerHeight + Math.ceil(window.pageYOffset)) >= document.body.offsetHeight) {
-            toTop.style.marginBottom = '110px';
+            toTop.style.marginBottom = '70px';
         } else {
             toTop.style.marginBottom = '50px';
         }

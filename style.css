@@ -9,10 +9,6 @@ html {
   scroll-behavior: smooth;
 }
 
-.no-scroll {
-  overflow: hidden;
-}
-
 body {
   font-family: "Lato";
   background-color: #242424;
@@ -141,31 +137,6 @@ p {
 .to-top:hover {
   -webkit-transform: translateY(-5px);
           transform: translateY(-5px);
-}
-
-.loading-screen {
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #242424;
-  z-index: 100000;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-}
-
-.loading-screen img {
-  opacity: 0.2;
-  -webkit-animation: blip 1s ease infinite;
-          animation: blip 1s ease infinite;
 }
 
 @-webkit-keyframes blip {
@@ -591,9 +562,6 @@ header .float-developer {
 .contact .footer {
   position: absolute;
   bottom: 0;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   width: 100%;
 }
 
@@ -641,27 +609,6 @@ header .float-developer {
 
 .contact .footer .back-to-top:hover p {
   color: white;
-}
-
-.contact .footer .social-media {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.contact .footer .social-media .social-img-container {
-  display: inline;
-  margin-right: 27px;
-  cursor: pointer;
-}
-
-.contact .footer .social-media .social-img-container path {
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-}
-
-.contact .footer .social-media .social-img-container:last-child {
-  margin-right: 0;
 }
 
 @media only screen and (max-width: 991px) {
